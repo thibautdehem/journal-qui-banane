@@ -1,0 +1,52 @@
+
+/* Run command in your terminal: sass input.scss output.css  */
+
+/* -------Text customization-------- */
+
+body {
+  margin: 0;
+  font-family: "Varela", sans-serif;
+  margin-top: 50px;
+}
+h1 {
+  font-family: "Varela", sans-serif;
+}
+
+/* import only the necessary Bootstrap files */
+@import "/Users/ThibautD/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/bootstrap-4.4.1/assets/stylesheets/bootstrap/_functions.scss";
+@import "/Users/ThibautD/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/bootstrap-4.4.1/assets/stylesheets/bootstrap/_variables.scss";
+
+/* -------Bootstrap customization-------- */
+/* -------Changing the color palette 🎨 "success", "info", "warning", "danger", "light","dark"-------- */
+
+$theme-colors: (
+  "primary":    #48435c,
+  "secondary":  #61e786,
+  "custom": #900
+);
+
+/* -------Changing style-------- */
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+/* -------Changing breakpoints-------- */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+/* -------Changing basis for padding and margins-------- */
+
+$spacer: 1rem;
+
+/* finally, import Bootstrap to set the changes! */
+
+@import "/Users/ThibautD/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/bootstrap-4.4.1/assets/stylesheets/bootstrap";
