@@ -2,14 +2,16 @@
 /* Run command in your terminal: sass input.scss output.css  */
 
 /* -------Text customization-------- */
-
-body {
+body, blockquote {
   margin: 0;
-  font-family: "Varela", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 50px;
+  color: #666666;
 }
+
 h1 {
-  font-family: "Varela", sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-size: 60px;
 }
 
 /* import only the necessary Bootstrap files */
@@ -19,11 +21,24 @@ h1 {
 /* -------Bootstrap customization-------- */
 /* -------Changing the color palette 🎨 "success", "info", "warning", "danger", "light","dark"-------- */
 
+$primary: #a279c7;
+$secondary: #ffc71a;
+
 $theme-colors: (
-  "primary":    #48435c,
-  "secondary":  #61e786,
+  "primary":    $primary,
+  "secondary":  $secondary,
   "custom": #900
 );
+
+.text-yellow {
+  color: #a279c7;
+  font-size: 60px;
+}
+
+.text-purple {
+  color: #ffc71a;
+  font-size: 60px;
+}
 
 /* -------Changing style-------- */
 
@@ -50,3 +65,35 @@ $spacer: 1rem;
 /* finally, import Bootstrap to set the changes! */
 
 @import "/Users/ThibautD/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/bootstrap-4.4.1/assets/stylesheets/bootstrap";
+
+/* Custom CSS */
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+  color: $primary;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
